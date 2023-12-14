@@ -14,7 +14,7 @@ function ExecuteScriptCore(script)
     if identifiershit == "Delta Android" then
         runcode(script)
     else
-        loadstring(content)() -- Universal bruhh
+        loadstring(script)() -- Universal bruhh
     end
 end
 
