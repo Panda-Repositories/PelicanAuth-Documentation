@@ -19,7 +19,8 @@ while true do
             -- Attempt to execute the script in a protected call
             local success, result = pcall(function()
                 local identifiershit = identifyexecutor()
-                if identifiershit == "Delta Android" then
+                -- Check if identifiershit contains the substring "Delta"
+                if identifiershit and string.find(identifiershit:lower(), "delta") then
                     runcode(script)
                 else
                     loadstring(script)() -- Universal bruhh
@@ -34,8 +35,8 @@ while true do
                 print("[Script Executed]")
             end
         end
+
         writefile(scriptFilePath, tostring(key)) -- Update the file with the key
     end
 end
-
 
