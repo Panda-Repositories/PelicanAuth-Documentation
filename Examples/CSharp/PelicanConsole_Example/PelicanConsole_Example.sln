@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PelicanConsole_Example", "PelicanConsole_Example.csproj", "{AD8335D5-9187-4FEC-AA3F-749A975B4F31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD8335D5-9187-4FEC-AA3F-749A975B4F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD8335D5-9187-4FEC-AA3F-749A975B4F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD8335D5-9187-4FEC-AA3F-749A975B4F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD8335D5-9187-4FEC-AA3F-749A975B4F31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35A79457-03F0-4AEF-9536-3A222769D14E}
+	EndGlobalSection
+EndGlobal

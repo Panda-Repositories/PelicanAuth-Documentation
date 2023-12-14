@@ -1,0 +1,11 @@
+F:\PelicanConsole_Example\bin\Debug\PelicanConsole_Example.exe.config
+F:\PelicanConsole_Example\bin\Debug\PelicanConsole_Example.exe
+F:\PelicanConsole_Example\bin\Debug\PelicanConsole_Example.pdb
+F:\PelicanConsole_Example\obj\Debug\PelicanConsole_Example.csproj.AssemblyReference.cache
+F:\PelicanConsole_Example\obj\Debug\PelicanConsole_Example.csproj.CoreCompileInputs.cache
+F:\PelicanConsole_Example\obj\Debug\PelicanConsole_Example.csproj.CopyComplete
+F:\PelicanConsole_Example\obj\Debug\PelicanConsole_Example.exe
+F:\PelicanConsole_Example\obj\Debug\PelicanConsole_Example.pdb
+F:\PelicanConsole_Example\bin\Debug\PelicanAuthLib.dll
+F:\PelicanConsole_Example\bin\Debug\PelicanAuthLib.pdb
+F:\PelicanConsole_Example\bin\Debug\PelicanAuthLib.dll.config
