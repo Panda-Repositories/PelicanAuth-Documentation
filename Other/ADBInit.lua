@@ -5,38 +5,28 @@ game.StarterGui:SetCore("SendNotification", {
     Duration = 3; -- how long the notification should in secounds
     })
 
-warn('Panda ADB-Development ( Windows ADB Sideloaded) for Delta')
-local key = "Ready"
-local scriptFilePath = "executed_script.lua"
-writefile(scriptFilePath, tostring(key))
-
+local ADB_Ready = "Ready"
+local ADBShellExecution = true
+local ADB_scriptFilePath = "executed_script.lua"
 while true do
-    wait(0.2) -- Wait for 1 second before checking again
-    local content = readfile(scriptFilePath)
+    wait(0.1)
+    if ADBShellExecution == true then         
+        local content = readfile(ADB_scriptFilePath)        
+        if not content or content ~= ADB_Ready then
+            if content then
+                -- Attempt to execute the script in a protected call
+                local success, result = pcall(function()
+                    -- runcode(tostring(content))
+                    loadstring(content)()
+                end)
     
-    if not content or content ~= key then
-        if content then
-            -- Attempt to execute the script in a protected call
-            local success, result = pcall(function()
-                local identifiershit = identifyexecutor()
-                -- Check if identifiershit contains the substring "Delta"
-                if identifiershit and string.find(identifiershit:lower(), "delta") then
-                    runcode(script)
-                else
-                    loadstring(script)() -- Universal bruhh
+                -- Check if the execution was successful
+                if not success then
+                    -- Handle the error (replace this with your specific error-handling logic)
+                    warn("[Error ADB Executing Script]: " .. result)
                 end
-            end)
-
-            -- Check if the execution was successful
-            if not success then
-                -- Handle the error (replace this with your specific error-handling logic)
-                print("[Error Executing Script]: " .. result)
-            else
-                print("[Script Executed]")
-            end
+            end    
+            writefile(ADB_scriptFilePath, tostring(ADB_Ready)) -- Update the file with the key
         end
-
-        writefile(scriptFilePath, tostring(key)) -- Update the file with the key
     end
 end
-
