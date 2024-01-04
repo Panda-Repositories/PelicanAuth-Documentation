@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{2a5f0283-80a3-471b-8c30-14c0af5ef804}</ProjectGuid>
+    <RootNamespace>PelicanKeysystem</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)dependencies\cpr\include;$(ProjectDir)dependencies\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;Normaliz.lib;advapi32.lib;Crypt32.lib;Wldap32.lib;$(ProjectDir)dependencies\curl\lib\libcurl_a.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)dependencies\cpr\include;$(ProjectDir)dependencies\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;Normaliz.lib;advapi32.lib;Crypt32.lib;Wldap32.lib;$(ProjectDir)dependencies\curl\lib\libcurl_a.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)dependencies\cpr\include;$(ProjectDir)dependencies\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;Normaliz.lib;advapi32.lib;Crypt32.lib;Wldap32.lib;$(ProjectDir)dependencies\curl\lib\libcurl_a.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)dependencies\cpr\include;$(ProjectDir)dependencies\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;Normaliz.lib;advapi32.lib;Crypt32.lib;Wldap32.lib;$(ProjectDir)dependencies\curl\lib\libcurl_a.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="anti_debug.cpp" />
+    <ClCompile Include="dependencies\cpr\src\auth.cpp" />
+    <ClCompile Include="dependencies\cpr\src\cookies.cpp" />
+    <ClCompile Include="dependencies\cpr\src\cprtypes.cpp" />
+    <ClCompile Include="dependencies\cpr\src\digest.cpp" />
+    <ClCompile Include="dependencies\cpr\src\error.cpp" />
+    <ClCompile Include="dependencies\cpr\src\multipart.cpp" />
+    <ClCompile Include="dependencies\cpr\src\parameters.cpp" />
+    <ClCompile Include="dependencies\cpr\src\payload.cpp" />
+    <ClCompile Include="dependencies\cpr\src\proxies.cpp" />
+    <ClCompile Include="dependencies\cpr\src\session.cpp" />
+    <ClCompile Include="dependencies\cpr\src\ssl_options.cpp" />
+    <ClCompile Include="dependencies\cpr\src\timeout.cpp" />
+    <ClCompile Include="dependencies\cpr\src\util.cpp" />
+    <ClCompile Include="JSON\dist\jsoncpp.cpp" />
+    <ClCompile Include="src\source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="anti_debug.hpp" />
+    <ClInclude Include="cURL\include\curl\curl.h" />
+    <ClInclude Include="cURL\include\curl\curlver.h" />
+    <ClInclude Include="cURL\include\curl\easy.h" />
+    <ClInclude Include="cURL\include\curl\mprintf.h" />
+    <ClInclude Include="cURL\include\curl\multi.h" />
+    <ClInclude Include="cURL\include\curl\options.h" />
+    <ClInclude Include="cURL\include\curl\stdcheaders.h" />
+    <ClInclude Include="cURL\include\curl\system.h" />
+    <ClInclude Include="cURL\include\curl\typecheck-gcc.h" />
+    <ClInclude Include="cURL\include\curl\urlapi.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\api.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\auth.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\body.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\cookies.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\cpr.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\cprtypes.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\curlholder.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\defines.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\digest.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\error.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\HttpStatus.hpp" />
+    <ClInclude Include="dependencies\cpr\include\cpr\low_speed.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\max_redirects.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\multipart.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\parameters.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\payload.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\proxies.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\response.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\session.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\ssl_options.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\timeout.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\util.h" />
+    <ClInclude Include="dependencies\curl\include\curl\curl.h" />
+    <ClInclude Include="dependencies\curl\include\curl\curlver.h" />
+    <ClInclude Include="dependencies\curl\include\curl\easy.h" />
+    <ClInclude Include="dependencies\curl\include\curl\mprintf.h" />
+    <ClInclude Include="dependencies\curl\include\curl\multi.h" />
+    <ClInclude Include="dependencies\curl\include\curl\stdcheaders.h" />
+    <ClInclude Include="dependencies\curl\include\curl\system.h" />
+    <ClInclude Include="dependencies\curl\include\curl\typecheck-gcc.h" />
+    <ClInclude Include="dependencies\curl\include\curl\urlapi.h" />
+    <ClInclude Include="GetParse.h" />
+    <ClInclude Include="JSON\dist\json\json-forwards.h" />
+    <ClInclude Include="JSON\dist\json\json.h" />
+    <ClInclude Include="Tools.h" />
+    <ClInclude Include="Xor.h" />
+    <ClInclude Include="xor_cc.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="cURL\include\curl\libcurl_a.lib" />
+    <Library Include="cURL\include\curl\libcurl_a_debug.lib" />
+    <Library Include="dependencies\curl\lib\libcurl_a.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

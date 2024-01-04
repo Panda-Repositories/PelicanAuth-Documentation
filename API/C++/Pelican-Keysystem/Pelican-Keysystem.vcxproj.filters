@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="dependencies">
+      <UniqueIdentifier>{47b90799-4a7d-48f3-815b-d32f3ddcebd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\cpr">
+      <UniqueIdentifier>{da199a61-2f66-4279-a59a-64e5311fb879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\curl">
+      <UniqueIdentifier>{97200ec0-0420-43a3-a5bc-1d586a5ff855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\cpr\include">
+      <UniqueIdentifier>{f66f343a-f1da-4959-a080-0f9dead949e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\cpr\src">
+      <UniqueIdentifier>{f7fe60ff-7d67-42a6-9d79-ef717595a160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\curl\include">
+      <UniqueIdentifier>{bfac0f28-8ae1-4274-9dbb-9dfe025f1408}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\curl\lib">
+      <UniqueIdentifier>{26a1fa92-6daa-472e-b936-1539a8fb17f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{f8a00b7f-2706-45c5-b86c-0911fbd2eaa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\JSON">
+      <UniqueIdentifier>{bde78ffe-9476-4ebc-bcf2-5d014facbe34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\cURL">
+      <UniqueIdentifier>{3d02aa1a-c030-4c09-b770-a4b274524d32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\SHA256">
+      <UniqueIdentifier>{1379d50a-9fe3-4c25-86ee-d709106cf99f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\source.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\cpr\src\auth.cpp">
+      <Filter>dependencies\cpr\src</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\cpr\src\cookies.cpp">
+      <Filter>dependencies\cpr\src</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\cpr\src\cprtypes.cpp">
+      <Filter>dependencies\cpr\src</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\cpr\src\digest.cpp">
+      <Filter>dependencies\cpr\src</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\cpr\src\error.cpp">
+      <Filter>dependencies\cpr\src</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\cpr\src\multipart.cpp">
+      <Filter>dependencies\cpr\src</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\cpr\src\parameters.cpp">
+      <Filter>dependencies\cpr\src</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\cpr\src\payload.cpp">
+      <Filter>dependencies\cpr\src</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\cpr\src\proxies.cpp">
+      <Filter>dependencies\cpr\src</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\cpr\src\session.cpp">
+      <Filter>dependencies\cpr\src</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\cpr\src\ssl_options.cpp">
+      <Filter>dependencies\cpr\src</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\cpr\src\timeout.cpp">
+      <Filter>dependencies\cpr\src</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\cpr\src\util.cpp">
+      <Filter>dependencies\cpr\src</Filter>
+    </ClCompile>
+    <ClCompile Include="JSON\dist\jsoncpp.cpp">
+      <Filter>Utilities\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="anti_debug.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dependencies\cpr\include\cpr\api.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\auth.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\body.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\cookies.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\cpr.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\cprtypes.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\curlholder.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\defines.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\digest.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\error.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\HttpStatus.hpp">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\low_speed.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\max_redirects.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\multipart.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\parameters.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\payload.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\proxies.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\response.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\session.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\ssl_options.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\timeout.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cpr\include\cpr\util.h">
+      <Filter>dependencies\cpr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\curl.h">
+      <Filter>dependencies\curl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\curlver.h">
+      <Filter>dependencies\curl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\easy.h">
+      <Filter>dependencies\curl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\mprintf.h">
+      <Filter>dependencies\curl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\multi.h">
+      <Filter>dependencies\curl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\stdcheaders.h">
+      <Filter>dependencies\curl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\system.h">
+      <Filter>dependencies\curl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\typecheck-gcc.h">
+      <Filter>dependencies\curl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\curl\include\curl\urlapi.h">
+      <Filter>dependencies\curl\include</Filter>
+    </ClInclude>
+    <ClInclude Include="cURL\include\curl\curl.h">
+      <Filter>Utilities\cURL</Filter>
+    </ClInclude>
+    <ClInclude Include="cURL\include\curl\curlver.h">
+      <Filter>Utilities\cURL</Filter>
+    </ClInclude>
+    <ClInclude Include="cURL\include\curl\easy.h">
+      <Filter>Utilities\cURL</Filter>
+    </ClInclude>
+    <ClInclude Include="cURL\include\curl\mprintf.h">
+      <Filter>Utilities\cURL</Filter>
+    </ClInclude>
+    <ClInclude Include="cURL\include\curl\multi.h">
+      <Filter>Utilities\cURL</Filter>
+    </ClInclude>
+    <ClInclude Include="cURL\include\curl\options.h">
+      <Filter>Utilities\cURL</Filter>
+    </ClInclude>
+    <ClInclude Include="cURL\include\curl\stdcheaders.h">
+      <Filter>Utilities\cURL</Filter>
+    </ClInclude>
+    <ClInclude Include="cURL\include\curl\system.h">
+      <Filter>Utilities\cURL</Filter>
+    </ClInclude>
+    <ClInclude Include="cURL\include\curl\typecheck-gcc.h">
+      <Filter>Utilities\cURL</Filter>
+    </ClInclude>
+    <ClInclude Include="cURL\include\curl\urlapi.h">
+      <Filter>Utilities\cURL</Filter>
+    </ClInclude>
+    <ClInclude Include="JSON\dist\json\json.h">
+      <Filter>Utilities\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="JSON\dist\json\json-forwards.h">
+      <Filter>Utilities\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="GetParse.h">
+      <Filter>Utilities\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="anti_debug.hpp">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Xor.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="xor_cc.hpp">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="dependencies\curl\lib\libcurl_a.lib">
+      <Filter>dependencies\curl\lib</Filter>
+    </Library>
+    <Library Include="cURL\include\curl\libcurl_a.lib">
+      <Filter>Utilities\cURL</Filter>
+    </Library>
+    <Library Include="cURL\include\curl\libcurl_a_debug.lib">
+      <Filter>Utilities\cURL</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
