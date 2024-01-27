@@ -5,8 +5,15 @@ First you need an executor (ofc)
 ```lua
 local PandaAuth = loadstring(game:HttpGet("https://pandadevelopment.net/servicelib?service=servicename&core=roblox&param=testing"))() : table
 ```
-
 The PandaAuth loadstring will return a table.
+Here are all the differents functions into PandaAuth 
+```lua
+PandaAuth:ValidateKey ----> Global key
+PandaAuth:ValidatePremiumKey ---> Premium key check
+PandaAuth:ValidateNormalKey ----> Non-premium key check
+PandaAuth:ResetHWID ----> Reset associated HWID of key
+PandaAuth:GetKey ----> Return get key link and set it to clipboard
+```
 
 # Setup 🏳️
 To setup Panda Library, call this function
@@ -88,3 +95,5 @@ Plan on how PandaAuth's validation works :
        - If there's an error, hash the FalseEndpoint and encrypt it with Viginere Cypher.
 ```
 
+# Validating 
+Since I'm lazy to implement validate shit ill give you guys a working example
