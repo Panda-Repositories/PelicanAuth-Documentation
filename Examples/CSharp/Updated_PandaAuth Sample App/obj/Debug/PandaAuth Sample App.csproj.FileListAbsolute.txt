@@ -1,0 +1,10 @@
+F:\PandaAuth Sample App\bin\Debug\PandaAuth Sample App.exe.config
+F:\PandaAuth Sample App\bin\Debug\PandaAuth Sample App.exe
+F:\PandaAuth Sample App\bin\Debug\PandaAuth Sample App.pdb
+F:\PandaAuth Sample App\bin\Debug\Newtonsoft.Json.dll
+F:\PandaAuth Sample App\bin\Debug\Newtonsoft.Json.xml
+F:\PandaAuth Sample App\obj\Debug\PandaAuth Sample App.csproj.AssemblyReference.cache
+F:\PandaAuth Sample App\obj\Debug\PandaAuth Sample App.csproj.CoreCompileInputs.cache
+F:\PandaAuth Sample App\obj\Debug\PandaAuth Sample App.csproj.CopyComplete
+F:\PandaAuth Sample App\obj\Debug\PandaAuth Sample App.exe
+F:\PandaAuth Sample App\obj\Debug\PandaAuth Sample App.pdb
